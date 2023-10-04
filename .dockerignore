@@ -4,3 +4,4 @@ tmp/
 .git/*
 .gitignore
 .null-ls_**.go
+.mockery.yaml

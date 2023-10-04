@@ -1,0 +1,15 @@
+version: '3'
+
+tasks:
+  setup:
+    desc: "Install dependecies to run project"
+    cmds:
+      - go install -tags 'postgres' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
+      - go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.54.2
+      - go install github.com/vektra/mockery/v2@v2.34.2
+
+  migrate:new:
+    desc: "Creating new migration"
+    cmds:
+      - .mockery.y
+    
