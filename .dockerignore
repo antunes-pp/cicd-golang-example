@@ -1,0 +1,6 @@
+volumes/*
+bin/*
+tmp/
+.git/*
+.gitignore
+.null-ls_**.go

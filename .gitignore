@@ -1,0 +1,4 @@
+docker/volumes/*
+bin/*
+./**/.null-ls_**.go
+
